@@ -12,6 +12,34 @@ export default function Page() {
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         <AcmeLogo />
         <p className={`${lusitana.className}`}>lusitana test paragraph</p>
+        <ul className="flex items-center space-x-6">
+          <li>
+            <Link href="/" className="hover:text-gray-300">
+              Beranda
+            </Link>
+          </li>
+          <li>
+            <Link href="/profile" className="hover:text-gray-300">
+              Profil
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="hover:text-gray-300">
+              Tentang
+            </Link>
+          </li>
+          {/* Contoh link ke halaman dinamis */}
+          <li>
+            <Link href="/products/1" className="hover:text-gray-300">
+              Produk 1
+            </Link>
+          </li>
+          <li>
+            <Link href="/products/laptop" className="hover:text-gray-300">
+              Produk Laptop
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
