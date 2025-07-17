@@ -30,13 +30,8 @@ export default function Page() {
           </li>
           {/* Contoh link ke halaman dinamis */}
           <li>
-            <Link href="/products/1" className="hover:text-gray-300">
-              Produk 1
-            </Link>
-          </li>
-          <li>
-            <Link href="/products/laptop" className="hover:text-gray-300">
-              Produk Laptop
+            <Link href="/products" className="hover:text-gray-300">
+              Produk
             </Link>
           </li>
         </ul>
